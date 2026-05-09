@@ -280,7 +280,7 @@ function initCheckPayButton() {
     const ref = generateRef();
     setLoading(btn, true);
 
-    initPaystack(pendingCheckData.email, 10000 /* ₦100 */, ref, async (response) => {
+    initPaystack(pendingCheckData.email, 10000 /* ₦500 */, ref, async (response) => {
       // Payment successful – now verify with backend and get device status
       await verifyAndCheck(response.reference, pendingCheckData);
       setLoading(btn, false);
