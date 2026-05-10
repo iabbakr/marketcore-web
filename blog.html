@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Marketcore</title>
+  <meta name="description" content="Tips, guides, and news for Nigerian electronics buyers and dealers — from the Marketcore team." />
+  <link rel="canonical" href="https://marketcore.ng/blog.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .blog-hero-card {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      color: #fff;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .blog-hero-card .meta { font-size: 13px; opacity: .75; margin-bottom: 12px; }
+    .blog-hero-card h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 12px; }
+    .blog-hero-card p  { font-size: 15px; opacity: .85; line-height: 1.7; max-width: 520px; }
+    .blog-hero-card .btn { margin-top: 20px; }
+    .blog-hero-badge {
+      width: 160px; height: 160px; border-radius: 50%;
+      background: rgba(255,255,255,.12);
+      border: 2px solid rgba(255,255,255,.2);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .category-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 36px; }
+    .cat-tab {
+      padding: 8px 18px; border-radius: 20px;
+      font-size: 13px; font-weight: 600; border: 1.5px solid var(--border);
+      background: var(--card); color: var(--muted); cursor: pointer; transition: var(--transition);
+    }
+    .cat-tab.active, .cat-tab:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .blog-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: var(--transition); display: flex; flex-direction: column; }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .blog-thumb { height: 180px; display: flex; align-items: center; justify-content: center; }
+    .blog-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .blog-cat { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+    .blog-body h3 { font-size: 16px; font-weight: 700; line-height: 1.4; margin-bottom: 10px; }
+    .blog-body p  { font-size: 14px; color: var(--muted); line-height: 1.6; flex: 1; }
+    .blog-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .blog-author { display: flex; align-items: center; gap: 8px; }
+    .blog-avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; }
+    .blog-author-name { font-size: 12px; font-weight: 600; color: var(--fg); }
+    .blog-date { font-size: 12px; color: var(--muted); }
+    .read-more { font-size: 13px; font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 4px; }
+    .newsletter { background: var(--fg); border-radius: var(--radius-lg); padding: 48px; text-align: center; margin-top: 64px; }
+    .newsletter h2 { font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .newsletter p  { color: #94a3b8; font-size: 15px; margin-bottom: 28px; }
+    .newsletter-form { display: flex; gap: 12px; max-width: 460px; margin: 0 auto; }
+    .newsletter-form input { flex: 1; padding: 14px 18px; border-radius: var(--radius); border: 1.5px solid rgba(255,255,255,.15); background: rgba(255,255,255,.08); color: #fff; font-family: var(--font); font-size: 15px; }
+    .newsletter-form input::placeholder { color: #64748b; }
+    .newsletter-form input:focus { outline: none; border-color: var(--primary-light); }
+    @media (max-width: 768px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .blog-hero-card { grid-template-columns: 1fr; }
+      .blog-hero-badge { display: none; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <span class="navbar-logo-text">Market<span>core</span></span>
+    </a>
+    <div class="navbar-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="dealers-guideline.html" class="nav-link">Dealer Guide</a>
+      <a href="blog.html" class="nav-link active">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="index.html#checker" class="btn btn-primary btn-sm">Check a Phone</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="badge badge-blue" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25);margin-bottom:16px;">Knowledge Hub</div>
+    <h1>Insights for Smarter<br/>Phone Buying in Nigeria</h1>
+    <p>Guides, tips, industry news, and market updates for Nigerian electronics buyers and dealers — written by people in the market.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Featured post -->
+    <div class="blog-hero-card">
+      <div>
+        <div class="meta">
+          <span class="badge badge-blue" style="background:rgba(255,255,255,.2);color:#fff;margin-right:8px;">Featured</span>
+          Buyer's Guide &nbsp;·&nbsp; 10 May 2026 &nbsp;·&nbsp; 8 min read
+        </div>
+        <h2>How to Know If a Second-Hand Phone Is Stolen Before You Buy</h2>
+        <p>Every year, thousands of Nigerians unknowingly purchase stolen smartphones. This complete guide walks you through every check you should make — IMEI verification, physical inspection, receipts, and more.</p>
+        <a href="#" class="btn btn-white">Read Full Article →</a>
+      </div>
+      <div class="blog-hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      </div>
+    </div>
+
+    <!-- Category filter -->
+    <div class="category-tabs">
+      <button class="cat-tab active">All Posts</button>
+      <button class="cat-tab">Buyer Guides</button>
+      <button class="cat-tab">Dealer Tips</button>
+      <button class="cat-tab">Industry News</button>
+      <button class="cat-tab">Security</button>
+      <button class="cat-tab">Legal</button>
+    </div>
+
+    <!-- Blog grid -->
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat text-primary">Buyer Guide</div>
+          <h3>What Is an IMEI Number and Why Does It Matter When Buying a Phone?</h3>
+          <p>The IMEI is your phone's unique fingerprint. We explain what it is, how to find it, and why every buyer in Nigeria must check it before handing over any money.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#1e40af;">A</div>
+              <div>
+                <div class="blog-author-name">Adebayo O.</div>
+                <div class="blog-date">8 May 2026 · 5 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#fee2e2,#fecaca);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat text-danger">Security</div>
+          <h3>5 Red Flags That the Phone You're Buying Is Stolen</h3>
+          <p>From suspiciously low prices to missing accessories and nervous sellers — these warning signs could save you from making a very costly mistake.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#dc2626;">C</div>
+              <div>
+                <div class="blog-author-name">Chidinma E.</div>
+                <div class="blog-date">10 May 2026 · 6 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat text-success">Dealer Tips</div>
+          <h3>Building a Trusted Reputation as an Electronics Dealer in Nigeria</h3>
+          <p>Your trust score isn't just a number — it's your business. Here's how verified Marketcore dealers build strong reputations and attract more customers.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#16a34a;">E</div>
+              <div>
+                <div class="blog-author-name">Emeka N.</div>
+                <div class="blog-date">10 May 2026 · 7 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat" style="color:#d97706;">Industry News</div>
+          <h3>Nigeria's Electronics Market in 2025: Trends, Challenges, and Opportunities</h3>
+          <p>From Computer Village to online platforms — how the Nigerian used phone market is evolving and what it means for buyers and sellers this year.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#d97706;">A</div>
+              <div>
+                <div class="blog-author-name">Adebayo O.</div>
+                <div class="blog-date">10 May 2026 · 9 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat" style="color:#7c3aed;">Legal</div>
+          <h3>What the Law Says About Buying a Stolen Phone in Nigeria</h3>
+          <p>Did you know buying a stolen device — even unknowingly — can expose you to criminal liability? Our legal expert breaks down what Nigerian law says and how to protect yourself.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#7c3aed;">E</div>
+              <div>
+                <div class="blog-author-name">Emeka N.</div>
+                <div class="blog-date">10 May 2026 · 8 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#cffafe,#a5f3fc);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat" style="color:#0891b2;">Dealer Tips</div>
+          <h3>How to Use KYC Verification to Win More Customers</h3>
+          <p>Buyers trust verified dealers more. Here's how completing your KYC on Marketcore directly translates to more sales, higher prices, and better business relationships.</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="blog-avatar" style="background:#0891b2;">C</div>
+              <div>
+                <div class="blog-author-name">Chidinma E.</div>
+                <div class="blog-date">10 May 2026 · 6 min</div>
+              </div>
+            </div>
+            <a href="#" class="read-more">Read <i data-feather="arrow-right" width="14" height="14"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <div style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+        <i data-feather="mail" width="26" height="26" style="color:#60a5fa;"></i>
+      </div>
+      <h2>Stay Informed</h2>
+      <p>Get the latest guides, market updates, and dealer tips delivered to your inbox. No spam — one email per week, maximum.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p style="font-size:12px;color:#475569;margin-top:14px;">By subscribing you agree to our <a href="privacy-policy.html" style="color:#60a5fa;">Privacy Policy</a>. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo-wrap"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="logo-name">Marketcore</span></div><p>Nigeria's most trusted phone verification platform.</p><div class="footer-social"><a href="#" aria-label="Twitter"><i data-feather="twitter" width="16" height="16"></i></a><a href="#" aria-label="Facebook"><i data-feather="facebook" width="16" height="16"></i></a><a href="#" aria-label="Instagram"><i data-feather="instagram" width="16" height="16"></i></a></div></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html#checker">Check a Phone</a><a href="index.html#report">Report Stolen</a><a href="index.html#dealers">Dealer Sign Up</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="dealers-guideline.html">Dealers Guideline</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Marketcore Technologies Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = '✓ Subscribed!';
+  btn.disabled = true;
+  btn.style.background = '#16a34a';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof feather !== 'undefined') feather.replace({ 'stroke-width': 2 });
+
+  // Category tabs (visual only — extend with real filtering for a CMS)
+  document.querySelectorAll('.cat-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dealers Guideline – Marketcore</title>
+  <meta name="description" content="Everything verified electronics dealers need to know about using the Marketcore platform — rules, features, KYC, transactions, and the dealer agreement." />
+  <link rel="canonical" href="https://marketcore.ng/dealers-guideline.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .toc { background: var(--muted-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; position: sticky; top: 88px; }
+    .toc h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 14px; }
+    .toc a { display: block; font-size: 13px; color: var(--muted); padding: 5px 0; border-left: 2px solid transparent; padding-left: 12px; transition: var(--transition); }
+    .toc a:hover { color: var(--primary); border-left-color: var(--primary); text-decoration: none; }
+    .guide-layout { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: flex-start; }
+    .guide-section { scroll-margin-top: 90px; margin-bottom: 56px; }
+    .guide-section h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--primary-xl); color: var(--fg); }
+    .guide-section h3 { font-size: 1rem; font-weight: 700; margin: 24px 0 10px; color: var(--fg); }
+    .guide-section p { font-size: 15px; color: #374151; line-height: 1.8; margin-bottom: 14px; }
+    .guide-section ul { margin: 10px 0 20px 20px; }
+    .guide-section ul li { font-size: 15px; color: #374151; margin-bottom: 6px; line-height: 1.7; list-style: disc; }
+    .guide-section a { color: var(--primary); }
+    .info-box { display: flex; gap: 14px; padding: 18px 20px; border-radius: var(--radius); margin: 20px 0; }
+    .info-box svg { flex-shrink: 0; margin-top: 2px; }
+    .info-box p { font-size: 14px; line-height: 1.6; margin: 0; }
+    .info-blue   { background: var(--primary-xl); border: 1px solid rgba(30,64,175,.15); }
+    .info-blue svg, .info-blue p { color: #1e3a8a; }
+    .info-green  { background: var(--success-bg); border: 1px solid rgba(22,163,74,.2); }
+    .info-green svg, .info-green p { color: #14532d; }
+    .info-red    { background: var(--danger-bg); border: 1px solid rgba(220,38,38,.2); }
+    .info-red svg, .info-red p { color: #7f1d1d; }
+    .info-yellow { background: var(--warning-bg); border: 1px solid rgba(217,119,6,.2); }
+    .info-yellow svg, .info-yellow p { color: #78350f; }
+    .score-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .score-table th, .score-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+    .score-table th { background: var(--muted-bg); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .score-table tr:last-child td { border-bottom: none; }
+    .step-list { counter-reset: step-counter; }
+    .step-list-item { display: flex; gap: 16px; margin-bottom: 16px; padding: 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .step-list-num { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; flex-shrink: 0; }
+    .step-list-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .step-list-item p  { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+    .legal-box { background: var(--fg); border-radius: var(--radius-lg); padding: 32px; color: #fff; margin: 24px 0; }
+    .legal-box h3 { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
+    .legal-box p  { font-size: 14px; color: #94a3b8; line-height: 1.7; margin-bottom: 10px; }
+    .legal-box strong { color: #fff; }
+    @media (max-width: 900px) {
+      .guide-layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <span class="navbar-logo-text">Market<span>core</span></span>
+    </a>
+    <div class="navbar-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="dealers-guideline.html" class="nav-link active">Dealer Guide</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="index.html#dealers" class="btn btn-primary btn-sm">Sign Up as Dealer</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="badge badge-blue" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25);margin-bottom:16px;">For Dealers</div>
+    <h1>Dealers Guideline</h1>
+    <p>Everything you need to know about joining, using, and getting the most out of the Marketcore dealer platform. Read this before you register.</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="guide-layout">
+
+      <!-- Sidebar TOC -->
+      <aside>
+        <div class="toc">
+          <h3>On this page</h3>
+          <a href="#overview">Overview</a>
+          <a href="#eligibility">Eligibility</a>
+          <a href="#registration">Registration &amp; KYC</a>
+          <a href="#trust-score">Trust Score</a>
+          <a href="#transactions">Transactions</a>
+          <a href="#device-checker">Device Checker</a>
+          <a href="#groups">Dealer Groups</a>
+          <a href="#ratings">Ratings System</a>
+          <a href="#code-of-conduct">Code of Conduct</a>
+          <a href="#suspension">Suspension &amp; Bans</a>
+          <a href="#agreement">Dealer Agreement</a>
+          <a href="#support">Getting Help</a>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main>
+
+        <div class="guide-section" id="overview">
+          <h2>1. Overview</h2>
+          <p>Marketcore is Nigeria's trusted phone verification and dealer management platform. The <strong>mobile application</strong> is built exclusively for verified electronics dealers — giving you tools to manage device transactions, build your professional reputation, connect with verified peers, and protect your business.</p>
+          <p>The <strong>web platform</strong> (this site) is open to all Nigerians — anyone can check a phone's status or report a stolen device for a small one-time fee. Becoming a dealer gives you access to the full platform at no monthly cost.</p>
+
+          <div class="info-box info-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <p><strong>Web is for everyone. Mobile is for dealers.</strong> As a registered dealer, you use the Marketcore mobile app (iOS and Android) for all dealer-specific features. The web platform handles public checks and reports.</p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="eligibility">
+          <h2>2. Eligibility</h2>
+          <p>To register as a dealer on Marketcore, you must meet all of the following criteria:</p>
+          <ul>
+            <li>Be at least <strong>18 years of age</strong></li>
+            <li>Be a Nigerian citizen or legal resident</li>
+            <li>Operate a legitimate electronics dealing business (new, used, or repair)</li>
+            <li>Possess a valid <strong>NIN (National Identification Number)</strong></li>
+            <li>Possess a valid <strong>BVN (Bank Verification Number)</strong></li>
+            <li>Have a valid email address and Nigerian phone number</li>
+            <li>Not be previously banned from the Marketcore platform</li>
+          </ul>
+          <div class="info-box info-yellow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <p>If your NIN or BVN appears in our banned identity registry, your registration will be automatically rejected. Banned users cannot create new accounts using the same identity documents.</p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="registration">
+          <h2>3. Registration &amp; KYC Verification</h2>
+          <h3>How to Register</h3>
+          <div class="step-list">
+            <div class="step-list-item"><div class="step-list-num">1</div><div><h4>Submit Dealer Interest (Web)</h4><p>Click "Sign Up as Dealer" on this website and fill in your name, email, phone, and shop details.</p></div></div>
+            <div class="step-list-item"><div class="step-list-num">2</div><div><h4>Download the App</h4><p>You'll be prompted to download the Marketcore mobile app (iOS or Android) to complete your registration.</p></div></div>
+            <div class="step-list-item"><div class="step-list-num">3</div><div><h4>Complete Your Profile</h4><p>Add your shop name, shop number, state, city, and local area within the app.</p></div></div>
+            <div class="step-list-item"><div class="step-list-num">4</div><div><h4>Submit KYC</h4><p>Enter your NIN and BVN in the KYC section. These are verified against government databases.</p></div></div>
+            <div class="step-list-item"><div class="step-list-num">5</div><div><h4>Set Up Security PIN</h4><p>Create a 6-digit PIN to secure your account. Optional biometric authentication is also available.</p></div></div>
+            <div class="step-list-item"><div class="step-list-num">6</div><div><h4>Await Admin Approval</h4><p>Our team reviews your application within 24–48 hours. You will receive an email and in-app notification once approved.</p></div></div>
+          </div>
+
+          <h3>KYC Data Handling</h3>
+          <p>Your NIN and BVN are encrypted at rest using AES-256 encryption and are never shared with third parties except for verification purposes. They are used exclusively to:</p>
+          <ul>
+            <li>Verify your identity and prevent duplicate accounts</li>
+            <li>Check against the banned identity registry</li>
+            <li>Ensure compliance with Nigerian financial regulations</li>
+          </ul>
+          <p>See our <a href="privacy-policy.html">Privacy Policy</a> for complete details on data handling.</p>
+        </div>
+
+        <div class="guide-section" id="trust-score">
+          <h2>4. Trust Score</h2>
+          <p>Every dealer starts with a <strong>trust score of 50 out of 100</strong>. Your trust score is visible to all other users and reflects the quality and reliability of your dealings on the platform.</p>
+
+          <table class="score-table">
+            <thead><tr><th>Action</th><th>Score Impact</th></tr></thead>
+            <tbody>
+              <tr><td>Complete KYC verification</td><td style="color:var(--success);font-weight:700;">+20 points</td></tr>
+              <tr><td>Receive a good rating (4–5 stars)</td><td style="color:var(--success);font-weight:700;">+2 points per rating</td></tr>
+              <tr><td>Receive a neutral rating (3 stars)</td><td>No change</td></tr>
+              <tr><td>Receive a bad rating (1–2 stars)</td><td style="color:var(--danger);font-weight:700;">−5 points per rating</td></tr>
+              <tr><td>Gain followers (every 10)</td><td style="color:var(--success);font-weight:700;">+1 point</td></tr>
+              <tr><td>Account flagged by admin</td><td style="color:var(--danger);font-weight:700;">Score frozen</td></tr>
+            </tbody>
+          </table>
+
+          <div class="info-box info-red">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <p><strong>Important:</strong> Receiving <strong>3 or more bad ratings</strong> (score of 2 stars or below) will automatically flag your account for admin review and temporarily suspend it pending investigation. Maintain your reputation carefully.</p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="transactions">
+          <h2>5. Transactions — Assign Phone Feature</h2>
+          <p>The Assign Phone feature allows one dealer to assign a device to another dealer (collector) for sale, with all terms tracked on the platform. This creates a legally traceable agreement between both parties.</p>
+
+          <h3>How It Works</h3>
+          <ul>
+            <li><strong>Owner</strong> assigns a phone to a <strong>Collector</strong> at an agreed price</li>
+            <li>Both parties receive a notification and digital record of the assignment</li>
+            <li>The owner can update the transaction status: <em>Paid</em>, <em>Returned</em>, or <em>Theft Reported</em></li>
+            <li>All transaction records are permanently logged for legal reference</li>
+          </ul>
+
+          <h3>Transaction Statuses</h3>
+          <ul>
+            <li><strong>Assigned</strong> — Device is with the collector, payment pending</li>
+            <li><strong>Paid</strong> — Collector has remitted payment to the owner</li>
+            <li><strong>Returned</strong> — Device was returned to the owner unsold</li>
+            <li><strong>Theft Reported</strong> — Owner has escalated to theft status (see below)</li>
+          </ul>
+
+          <div class="legal-box" id="agreement">
+            <h3>⚖️ Legal Agreement — Device Collection</h3>
+            <p>By assigning or accepting a phone assignment on Marketcore, both parties enter into a legally binding agreement under Nigerian law. Specifically:</p>
+            <p>Any dealer who collects a device from another dealer's shop and <strong>fails to return the device or remit payment</strong> within the agreed timeframe shall be liable to pay <strong>150% of the assigned device value</strong> as damages, in addition to the original price.</p>
+            <p>This is enforceable under the <strong>Sale of Goods Act (Sections 45–52, LFN 2004)</strong> and the <strong>Nigerian Contract Law</strong>. Marketcore transaction records serve as valid evidence in legal proceedings.</p>
+            <p>Reporting a transaction as <strong>Theft</strong> triggers an alert to all parties and generates a legal reference that the owner can present to the Nigerian Police Force (NPF). <strong>False theft reports are a criminal offence.</strong></p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="device-checker">
+          <h2>6. Device Checker (Dealer Access)</h2>
+          <p>As a verified dealer, you can check any device's status within the mobile app as part of your standard account features. The public web checker costs ₦100 per check — dealer mobile app access is included with your account.</p>
+          <p>Always check a device before:</p>
+          <ul>
+            <li>Purchasing a used device for resale</li>
+            <li>Accepting a device as collateral or on consignment</li>
+            <li>Transacting with an unfamiliar seller</li>
+          </ul>
+          <div class="info-box info-green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p>A clean result means the device is not in our database — it does <em>not</em> guarantee the phone was never stolen. Always request a purchase receipt and physically inspect the device.</p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="groups">
+          <h2>7. Dealer Groups</h2>
+          <p>Dealer groups are location-based communities within the Marketcore app. Each group is scoped to a geographic level:</p>
+          <ul>
+            <li><strong>All Nigeria</strong> — Open to all verified dealers nationwide</li>
+            <li><strong>State groups</strong> — Open to dealers in a specific state (e.g. Lagos, Rivers, Kano)</li>
+            <li><strong>City groups</strong> — Open to dealers in a specific city (e.g. Computer Village Ikeja)</li>
+            <li><strong>Area groups</strong> — Hyper-local to a specific market area</li>
+          </ul>
+          <p>Within groups, dealers can share products, post updates, ask questions, and message each other directly. Group posts support images and text. Inappropriate content will result in post removal and account review.</p>
+        </div>
+
+        <div class="guide-section" id="ratings">
+          <h2>8. Ratings System</h2>
+          <p>After completing a transaction, dealers rate each other on a <strong>1–5 star scale</strong>. Ratings are tied to specific transaction IDs — you cannot rate a dealer without a completed transaction with them.</p>
+          <ul>
+            <li>Ratings are permanent and cannot be deleted by the rated dealer</li>
+            <li>You can only rate a dealer once per transaction</li>
+            <li>Ratings may include an optional written comment</li>
+            <li>Abusive or false ratings can be disputed by contacting <a href="mailto:dealers@marketcore.ng">dealers@marketcore.ng</a></li>
+          </ul>
+        </div>
+
+        <div class="guide-section" id="code-of-conduct">
+          <h2>9. Code of Conduct</h2>
+          <p>All Marketcore dealers are expected to maintain the highest standards of professional conduct. The following are strictly prohibited:</p>
+          <ul>
+            <li>Buying, selling, or handling stolen devices</li>
+            <li>Submitting false or fraudulent KYC information</li>
+            <li>Submitting false device reports or theft allegations</li>
+            <li>Harassing, threatening, or abusing other dealers or users</li>
+            <li>Creating multiple accounts to circumvent a suspension or ban</li>
+            <li>Sharing your account credentials with any other person</li>
+            <li>Misusing the transaction system (fake assignments, collusion)</li>
+            <li>Posting inappropriate, offensive, or misleading content in groups</li>
+          </ul>
+          <div class="info-box info-red">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            <p>Violation of any code of conduct rule may result in immediate suspension or permanent ban without a refund of any fees paid. Serious violations will be reported to Nigerian law enforcement.</p>
+          </div>
+        </div>
+
+        <div class="guide-section" id="suspension">
+          <h2>10. Suspension &amp; Bans</h2>
+          <h3>Account Suspension</h3>
+          <p>An account may be suspended temporarily for:</p>
+          <ul>
+            <li>Receiving 3 or more bad ratings (1–2 stars)</li>
+            <li>A pending investigation by our admin team</li>
+            <li>Suspected fraudulent activity pending review</li>
+          </ul>
+          <p>During suspension, you cannot assign phones, join groups, or send messages. You may still log in and view your account. Suspended accounts are reviewed within 5 business days.</p>
+
+          <h3>Permanent Ban</h3>
+          <p>Permanent bans are issued for:</p>
+          <ul>
+            <li>Confirmed fraud, theft, or criminal activity</li>
+            <li>Submitting deliberately false KYC information</li>
+            <li>Repeated code of conduct violations after warnings</li>
+            <li>Court orders requiring account termination</li>
+          </ul>
+          <p>Upon permanent ban, your NIN and BVN are added to the Marketcore banned identity registry. No new accounts may be created using those identity documents.</p>
+
+          <h3>Pardons</h3>
+          <p>Suspended (not banned) dealers may be pardoned by an admin after investigation. A pardon resets your bad rating count to zero and restores full account access. Permanently banned accounts cannot be pardoned except by a valid court order.</p>
+        </div>
+
+        <div class="guide-section" id="support">
+          <h2>11. Getting Help</h2>
+          <p>If you need assistance with your dealer account, contact our dedicated dealer support team:</p>
+          <ul>
+            <li><strong>Dealer Support:</strong> <a href="mailto:dealers@marketcore.ng">dealers@marketcore.ng</a></li>
+            <li><strong>KYC Issues:</strong> <a href="mailto:kyc@marketcore.ng">kyc@marketcore.ng</a></li>
+            <li><strong>Legal &amp; Disputes:</strong> <a href="mailto:legal@marketcore.ng">legal@marketcore.ng</a></li>
+            <li><strong>In-App:</strong> Profile → Help &amp; Support</li>
+          </ul>
+          <p>We respond to all dealer enquiries within one business day.</p>
+
+          <div style="margin-top:32px;">
+            <a href="index.html#dealers" class="btn btn-primary btn-lg">
+              <i data-feather="user-plus" width="18" height="18"></i>
+              Sign Up as a Dealer
+            </a>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo-wrap"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="logo-name">Marketcore</span></div><p>Nigeria's most trusted phone verification platform.</p><div class="footer-social"><a href="#" aria-label="Twitter"><i data-feather="twitter" width="16" height="16"></i></a><a href="#" aria-label="Facebook"><i data-feather="facebook" width="16" height="16"></i></a><a href="#" aria-label="Instagram"><i data-feather="instagram" width="16" height="16"></i></a></div></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html#checker">Check a Phone</a><a href="index.html#report">Report Stolen</a><a href="index.html#dealers">Dealer Sign Up</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="dealers-guideline.html">Dealers Guideline</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Marketcore Technologies Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>document.addEventListener('DOMContentLoaded',()=>{ if(typeof feather!=='undefined') feather.replace({'stroke-width':2}); });</script>
+</body>
+</html>
