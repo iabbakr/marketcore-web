@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Marketcore</title>
+  <meta name="description" content="Get in touch with Marketcore. We're here to help with device checks, stolen reports, dealer accounts, and any other enquiries." />
+  <link rel="canonical" href="https://marketcore.ng/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; background: none; border: none; cursor: pointer; text-align: left; font-family: var(--font); font-size: 15px; font-weight: 600; color: var(--fg); gap: 16px; }
+    .faq-question svg { flex-shrink: 0; transition: transform .25s ease; color: var(--muted); }
+    .faq-item.open .faq-question svg { transform: rotate(180deg); color: var(--primary); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-answer-inner { padding-bottom: 20px; font-size: 14px; color: var(--muted); line-height: 1.7; }
+    .faq-item.open .faq-answer { max-height: 400px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <span class="navbar-logo-text">Market<span>core</span></span>
+    </a>
+    <div class="navbar-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="dealers-guideline.html" class="nav-link">Dealer Guide</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="index.html#checker" class="btn btn-primary btn-sm">Check a Phone</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact &amp; Support</h1>
+    <p>We aim to respond to all enquiries within one business day. For payment issues, please have your Paystack reference number ready.</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact info -->
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Whether you have a question about a device check result, need help with your dealer account, or want to report a technical issue — our team is here for you.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i data-feather="mail" width="22" height="22"></i></div>
+          <div class="contact-item-info">
+            <h4>General Enquiries</h4>
+            <p><a href="mailto:hello@marketcore.ng">hello@marketcore.ng</a></p>
+            <p style="font-size:12px;margin-top:4px;">Response within 24 hours on business days</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" style="background:#fef3c7;color:#d97706;"><i data-feather="credit-card" width="22" height="22"></i></div>
+          <div class="contact-item-info">
+            <h4>Billing &amp; Payment Issues</h4>
+            <p><a href="mailto:billing@marketcore.ng">billing@marketcore.ng</a></p>
+            <p style="font-size:12px;margin-top:4px;">Include your Paystack reference number</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" style="background:#fee2e2;color:#dc2626;"><i data-feather="shield" width="22" height="22"></i></div>
+          <div class="contact-item-info">
+            <h4>Report Disputes &amp; Legal</h4>
+            <p><a href="mailto:legal@marketcore.ng">legal@marketcore.ng</a></p>
+            <p style="font-size:12px;margin-top:4px;">For disputed reports, court orders, and legal matters</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" style="background:#dcfce7;color:#16a34a;"><i data-feather="users" width="22" height="22"></i></div>
+          <div class="contact-item-info">
+            <h4>Dealer Support</h4>
+            <p><a href="mailto:dealers@marketcore.ng">dealers@marketcore.ng</a></p>
+            <p style="font-size:12px;margin-top:4px;">KYC, account approval, and mobile app support</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" style="background:#ede9fe;color:#7c3aed;"><i data-feather="briefcase" width="22" height="22"></i></div>
+          <div class="contact-item-info">
+            <h4>Careers &amp; Partnerships</h4>
+            <p><a href="mailto:jobs@marketcore.ng">jobs@marketcore.ng</a></p>
+            <p style="font-size:12px;margin-top:4px;"><a href="careers.html">View open roles →</a></p>
+          </div>
+        </div>
+
+        <div style="background:var(--muted-bg);border-radius:var(--radius);padding:20px;margin-top:8px;font-size:13px;color:var(--muted);">
+          <strong style="color:var(--fg);display:block;margin-bottom:8px;">Business Hours</strong>
+          <p>Monday – Friday: 8:00 AM – 6:00 PM WAT</p>
+          <p style="margin-top:4px;">Saturday: 9:00 AM – 2:00 PM WAT</p>
+          <p style="margin-top:4px;">Sunday &amp; Public Holidays: Closed</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact form -->
+      <div>
+        <div class="card">
+          <div class="card-body" style="padding:32px;">
+            <h3 style="font-size:20px;font-weight:800;margin-bottom:6px;">Send Us a Message</h3>
+            <p style="font-size:14px;color:var(--muted);margin-bottom:28px;">Fill out the form below and we'll get back to you within one business day.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name <span>*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon"><i data-feather="user" width="16" height="16"></i></span>
+                  <input type="text" id="contact-name" class="form-input" placeholder="Your full name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address <span>*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon"><i data-feather="mail" width="16" height="16"></i></span>
+                  <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject <span>*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon"><i data-feather="tag" width="16" height="16"></i></span>
+                  <select id="contact-subject" class="form-select">
+                    <option value="">Select a topic...</option>
+                    <option>Device Check Result Question</option>
+                    <option>Payment / Billing Issue</option>
+                    <option>Stolen Report Dispute</option>
+                    <option>Dealer Account Support</option>
+                    <option>Technical Problem</option>
+                    <option>Partnership / Business Enquiry</option>
+                    <option>Press &amp; Media</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-reference">Payment Reference (if applicable)</label>
+                <div class="input-wrap">
+                  <span class="input-icon"><i data-feather="hash" width="16" height="16"></i></span>
+                  <input type="text" id="contact-reference" class="form-input" placeholder="e.g. MC_1234567890_ABC" />
+                </div>
+                <p class="form-hint">Helps us resolve billing issues faster.</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message <span>*</span></label>
+                <div class="input-wrap">
+                  <span class="input-icon" style="top:14px;align-items:flex-start;"><i data-feather="message-square" width="16" height="16"></i></span>
+                  <textarea id="contact-message" class="form-textarea" rows="5" placeholder="Please describe your issue or question in as much detail as possible…" required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full btn-lg">
+                <i data-feather="send" width="18" height="18"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container" style="max-width:760px;">
+    <div class="text-center" style="margin-bottom:48px;">
+      <div class="section-tag"><i data-feather="help-circle" width="14" height="14"></i> FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-body" style="padding:8px 32px;">
+        <div class="faq-item">
+          <button class="faq-question">What does a "clean" check result mean?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">A "clean" result means the IMEI or serial number you checked is not currently present in our database of reported stolen or flagged devices. It does not guarantee the phone has never been stolen — only that no report exists in our system. Always combine a Marketcore check with physical inspection and purchase receipt verification.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I get a refund if the result comes back clean?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">No. The ₦100 fee is charged for the service of querying our database — regardless of the result. A clean result means the service was completed as requested. Refunds are only issued in the event of a verifiable technical failure where the service could not be delivered. See our <a href="terms.html#payments-terms">Terms of Service</a> for full details.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I remove a report for a device I have recovered?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Once a stolen device report is verified and added to our database, it can only be removed or modified upon receipt of a valid court order. If you have recovered your device and wish to dispute or update the report, please contact <a href="mailto:legal@marketcore.ng">legal@marketcore.ng</a> with supporting documentation.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How long does it take to process a stolen report?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Reports are processed and appear in our database within minutes of successful payment verification. You will receive an email confirmation once your report is live and searchable by others.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I sign up as a dealer?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Click the "Sign Up as Dealer" button on our <a href="index.html">homepage</a>. After submitting your details, you will be prompted to download the Marketcore mobile app where you complete your KYC verification (NIN + BVN) and await admin approval. The entire process typically takes 24–48 hours.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">I submitted a false report by mistake — what do I do?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Contact us immediately at <a href="mailto:legal@marketcore.ng">legal@marketcore.ng</a> with your payment reference, the IMEI/serial you reported, and a clear explanation. Genuine mistakes reported promptly will be reviewed. Deliberately false reports are a criminal offence under Nigerian law and will be prosecuted.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is Marketcore affiliated with the Nigerian Police Force?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Marketcore is an independent private company. We are not affiliated with the Nigerian Police Force (NPF), EFCC, or any other government agency. However, we cooperate fully with lawful requests from these agencies and will share relevant information when required by law. We encourage all users who have had devices stolen to also file a formal police report.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What payment methods do you accept?<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="faq-answer"><div class="faq-answer-inner">All payments are processed via Paystack, which accepts debit cards (Visa, Mastercard, Verve), bank transfers, USSD, and mobile money. We do not accept cash payments. All transactions are in Nigerian Naira (₦).</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo-wrap"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="logo-name">Marketcore</span></div><p>Nigeria's most trusted phone verification platform.</p></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html#checker">Check a Phone</a><a href="index.html#report">Report Stolen</a><a href="index.html#dealers">Dealer Sign Up</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="dealers-guideline.html">Dealers Guideline</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Marketcore Technologies Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof feather !== 'undefined') feather.replace({ 'stroke-width': 2 });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+});
+</script>
+</body>
+</html>

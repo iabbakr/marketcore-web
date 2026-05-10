@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Marketcore</title>
+  <meta name="description" content="Learn about Marketcore — Nigeria's trusted phone verification platform built by electronics dealers, for everyone." />
+  <link rel="canonical" href="https://marketcore.ng/about.html" />
+  <meta property="og:title" content="About Us – Marketcore" />
+  <meta property="og:description" content="Nigeria's trusted phone verification platform built to protect buyers and empower verified electronics dealers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-hero-img {
+      width: 100%; max-width: 520px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 32px 64px rgba(30,64,175,.3);
+    }
+    .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 48px; }
+    .team-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center; transition: var(--transition); }
+    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .team-avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: #fff; }
+    .team-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+    .team-role { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+    .team-bio  { font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .value-card { display: flex; gap: 20px; padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 16px; }
+    .value-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .value-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .value-card p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .milestone { display: flex; gap: 24px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid var(--border); }
+    .milestone:last-child { border-bottom: none; }
+    .milestone-year { font-size: 24px; font-weight: 800; color: var(--primary); min-width: 80px; }
+    .milestone h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .milestone p  { font-size: 14px; color: var(--muted); }
+    @media (max-width: 768px) {
+      .team-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr !important; }
+      .about-hero-img { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <span class="navbar-logo-text">Market<span>core</span></span>
+    </a>
+    <div class="navbar-links">
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="dealers-guideline.html" class="nav-link">Dealer Guide</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="index.html#checker" class="btn btn-outline btn-sm">Check a Phone</a>
+      <a href="index.html#dealers" class="btn btn-primary btn-sm">Sign Up as Dealer</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="dealers-guideline.html">Dealer Guidelines</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="careers.html">Careers</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="badge badge-blue" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25);margin-bottom:16px;">Our Story</div>
+    <h1>Built by Dealers,<br/>Trusted by Everyone</h1>
+    <p>Marketcore was born out of real frustration — the Nigerian electronics market needed a solution for theft, fraud, and mistrust. We built one.</p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <div class="section-tag"><i data-feather="target" width="14" height="14"></i> Our Mission</div>
+        <h2 class="section-title">Making Every Phone Transaction Safe in Nigeria</h2>
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:20px;">
+          Every day, thousands of Nigerians buy second-hand smartphones without knowing whether the device they're purchasing is stolen, flagged, or clean. This exposes innocent buyers to legal risk and financial loss.
+        </p>
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:20px;">
+          Marketcore was founded to change this reality. By connecting Nigeria's verified electronics dealers into a single, trusted network — and making that network's data accessible to every citizen — we are building the infrastructure for a safer, more transparent device marketplace.
+        </p>
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;">
+          Our platform is proudly Nigerian-built, legally backed, and driven by a community of KYC-verified professionals who care about the integrity of the electronics market.
+        </p>
+      </div>
+      <div class="about-hero-img">
+        <div style="text-align:center;color:#fff;padding:40px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 20px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p style="font-size:18px;font-weight:700;opacity:.8;">Protecting Nigeria's<br/>Electronics Market</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <div class="section-tag"><i data-feather="heart" width="14" height="14"></i> Our Values</div>
+      <h2 class="section-title">What We Stand For</h2>
+    </div>
+    <div class="grid-2">
+      <div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#dbeafe;color:#1e40af;"><i data-feather="shield" width="24" height="24"></i></div>
+          <div><h3>Trust &amp; Transparency</h3><p>Every record in our database is submitted by a KYC-verified dealer. No anonymous reports. No guessing. Every data point is accountable.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#dcfce7;color:#16a34a;"><i data-feather="users" width="24" height="24"></i></div>
+          <div><h3>Community First</h3><p>Marketcore is built on the collective power of Nigerian electronics dealers. Our strength comes from our community — verified, local, and real.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#fef3c7;color:#d97706;"><i data-feather="zap" width="24" height="24"></i></div>
+          <div><h3>Speed &amp; Simplicity</h3><p>Checking a phone should take seconds, not hours. We obsess over making our product fast, intuitive, and accessible to everyone in Nigeria.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#fee2e2;color:#dc2626;"><i data-feather="lock" width="24" height="24"></i></div>
+          <div><h3>Legal Accountability</h3><p>All dealer transactions, KYC data, and reports operate within Nigerian law. We partner with legal professionals to ensure our platform is fully compliant.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#ede9fe;color:#7c3aed;"><i data-feather="trending-up" width="24" height="24"></i></div>
+          <div><h3>Dealer Empowerment</h3><p>Beyond verification, we give dealers the tools to grow their reputation, build trust scores, and conduct business safely through our mobile app.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background:#cffafe;color:#0891b2;"><i data-feather="globe" width="24" height="24"></i></div>
+          <div><h3>Pan-Nigeria Coverage</h3><p>From Computer Village in Lagos to Onitsha Main Market to Kano's Sabon Gari — Marketcore is built for every corner of Nigeria.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONES -->
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <div class="text-center" style="margin-bottom:48px;">
+      <div class="section-tag"><i data-feather="flag" width="14" height="14"></i> Our Journey</div>
+      <h2 class="section-title">How We Got Here</h2>
+    </div>
+    <div class="card">
+      <div class="card-body" style="padding:32px;">
+        <div class="milestone">
+          <div class="milestone-year">2023</div>
+          <div><h3>The Problem Identified</h3><p>Our founders — all active electronics dealers — witness firsthand how stolen device fraud costs Nigerian buyers and dealers millions annually. Research begins.</p></div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-year">2024</div>
+          <div><h3>Platform Built</h3><p>The Marketcore mobile app and backend infrastructure are developed. Initial network of 50 verified dealers onboarded in Lagos for beta testing.</p></div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-year">2024</div>
+          <div><h3>National Expansion</h3><p>Dealer network grows to 500+ verified members across 12 states. First 10,000 device checks completed. Strategic partnerships with Nigerian legal firms established.</p></div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-year">2025</div>
+          <div><h3>Web Platform Launch</h3><p>Marketcore.ng launches — bringing phone verification to every Nigerian, not just dealers. Anyone can check a phone or report theft for a small one-time fee.</p></div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-year">Future</div>
+          <div><h3>API & Warranty Checks</h3><p>Marketcore API launches for banks, insurance companies, and e-commerce platforms to integrate real-time device status checks into their services.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:0;">
+      <div class="section-tag"><i data-feather="users" width="14" height="14"></i> Our Team</div>
+      <h2 class="section-title">The People Behind Marketcore</h2>
+      <p class="section-sub" style="margin:0 auto;">A team of Nigerian tech builders, electronics industry veterans, and legal professionals.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1e40af,#2563eb);">A</div>
+        <div class="team-name">Adebayo Ogunleye</div>
+        <div class="team-role">Co-Founder &amp; CEO</div>
+        <div class="team-bio">Former electronics dealer from Computer Village, Lagos. 12 years in the Nigerian tech device market. Built Marketcore to solve problems he faced daily.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#16a34a,#15803d);">C</div>
+        <div class="team-name">Chidinma Eze</div>
+        <div class="team-role">Co-Founder &amp; CTO</div>
+        <div class="team-bio">Software engineer with 8 years experience. Previously built fintech infrastructure for Nigerian startups. Leads all technology and product development at Marketcore.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);">E</div>
+        <div class="team-name">Emeka Nwosu</div>
+        <div class="team-role">Head of Legal &amp; Compliance</div>
+        <div class="team-bio">Barrister and solicitor with expertise in Nigerian commercial law. Ensures all Marketcore operations comply with Nigerian law and are legally defensible.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-card-icon" style="background:#dbeafe;color:#1e40af;"><i data-feather="smartphone" width="26" height="26"></i></div>
+        <h3>25,000+</h3>
+        <p>Device checks completed across Nigeria</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon" style="background:#fee2e2;color:#dc2626;"><i data-feather="alert-triangle" width="26" height="26"></i></div>
+        <h3>4,800+</h3>
+        <p>Stolen devices reported and flagged</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon" style="background:#dcfce7;color:#16a34a;"><i data-feather="users" width="26" height="26"></i></div>
+        <h3>1,200+</h3>
+        <p>KYC-verified dealers in our network</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon" style="background:#fef3c7;color:#d97706;"><i data-feather="map-pin" width="26" height="26"></i></div>
+        <h3>36 States</h3>
+        <p>Coverage across all Nigerian states</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="logo-name">Marketcore</span></div>
+        <p>Nigeria's most trusted phone verification platform, powered by a network of KYC-verified electronics dealers across all 36 states.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><i data-feather="twitter" width="16" height="16"></i></a>
+          <a href="#" aria-label="Facebook"><i data-feather="facebook" width="16" height="16"></i></a>
+          <a href="#" aria-label="Instagram"><i data-feather="instagram" width="16" height="16"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html#checker">Check a Phone</a><a href="index.html#report">Report Stolen</a><a href="index.html#dealers">Dealer Sign Up</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="dealers-guideline.html">Dealers Guideline</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="dealers-guideline.html#agreement">Dealer Agreement</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Marketcore Technologies Ltd. All rights reserved. Registered in Nigeria.</p>
+      <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>document.addEventListener('DOMContentLoaded',()=>{ if(typeof feather!=='undefined') feather.replace({'stroke-width':2}); });</script>
+</body>
+</html>
