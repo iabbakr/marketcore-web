@@ -37,7 +37,7 @@ Open `index.html` and find this block near the top `<head>`:
 
 ```html
 <script>
-  window.MC_API_BASE     = 'https://api.marketcore.ng/api/v1'; // ← your backend URL
+  window.MC_API_BASE     = 'https://api.marketcore.com/api/v1'; // ← your backend URL
   window.MC_PAYSTACK_KEY = 'pk_test_REPLACE_WITH_YOUR_KEY';    // ← your Paystack public key
 </script>
 ```
@@ -136,7 +136,7 @@ Search for `href="#"` next to `App Store` and `Google Play` buttons and replace 
 Find the `.footer-social` section in each page footer and replace `href="#"` with your actual profile URLs.
 
 ### Domain
-Replace all occurrences of `https://marketcore.ng` with your actual domain for canonical URLs and Open Graph tags.
+Replace all occurrences of `https://marketcore.com` with your actual domain for canonical URLs and Open Graph tags.
 
 ---
 
@@ -146,15 +146,15 @@ Before going live, create these email addresses:
 
 | Email | Purpose |
 |-------|---------|
-| `hello@marketcore.ng` | General enquiries |
-| `billing@marketcore.ng` | Payment issues |
-| `legal@marketcore.ng` | Legal and disputes |
-| `dealers@marketcore.ng` | Dealer support |
-| `kyc@marketcore.ng` | KYC issues |
-| `jobs@marketcore.ng` | Careers |
-| `privacy@marketcore.ng` | Privacy requests |
-| `security@marketcore.ng` | Security issues |
-| `no-reply@marketcore.ng` | Transactional email sender |
+| `hello@marketcore.com` | General enquiries |
+| `billing@marketcore.com` | Payment issues |
+| `legal@marketcore.com` | Legal and disputes |
+| `dealers@marketcore.com` | Dealer support |
+| `kyc@marketcore.com` | KYC issues |
+| `jobs@marketcore.com` | Careers |
+| `privacy@marketcore.com` | Privacy requests |
+| `security@marketcore.com` | Security issues |
+| `no-reply@marketcore.com` | Transactional email sender |
 
 ---
 
@@ -183,7 +183,7 @@ Each page already includes:
 - Semantic HTML (`<nav>`, `<main>`, `<section>`, `<footer>`, `aria-*` attributes)
 
 To complete SEO setup:
-1. Replace `https://marketcore.ng` with your actual domain throughout
+1. Replace `https://marketcore.com` with your actual domain throughout
 2. Create and upload an `og-image.png` (1200×630px) for social sharing previews
 3. Add a `favicon.ico` and apple touch icon
 4. Submit your sitemap to Google Search Console
@@ -192,5 +192,5 @@ To complete SEO setup:
 
 ## 📞 Support
 
-- Email: hello@marketcore.ng
-- Dealer support: dealers@marketcore.ng
+- Email: hello@marketcore.com
+- Dealer support: dealers@marketcore.com
