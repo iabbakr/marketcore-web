@@ -3,7 +3,7 @@
    Backend-first payment & device check flow
    ================================================ */
 
-const API_BASE = (window.MC_API_BASE || 'https://api.marketcore.ng/api/v1');
+const API_BASE = (window.MC_API_BASE || 'https://api.marketcore.com/api/v1');
 const PAYSTACK_KEY = window.MC_PAYSTACK_KEY || 'pk_test_REPLACE_WITH_YOUR_PAYSTACK_PUBLIC_KEY';
 
 /* ─────────────────────────────────────────────── */
